@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <div class="alert alert-warning shadow-lg py-5">
+        <h1 class="display-4 fw-bold text-warning"><i class="bi bi-x-circle-fill"></i> Payment Cancelled</h1>
+        <p class="lead mt-3">Looks like your payment didn't go through.</p>
+        <p class="mb-4">You can return to the shop to try again or browse more products.</p>
+        <a href="{{ url_for('home') }}" class="btn btn-outline-warning btn-lg">Back to Shop</a>
+    </div>
+</div>
+{% endblock %}

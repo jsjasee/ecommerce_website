@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis animate__animated animate__fadeInLeft">Welcome! Thanks for dropping by!</h1>
+        <p class="lead animate__animated animate__fadeInLeft">Looking for custom-builds or templates to create your next big project? Well you're in the right place!</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a href="/shop" type="button" class="btn btn-primary btn-lg animate__animated animate__pulse animate__delay-1s">SHOP NOWW</a>
+        </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="img-fluid rounded-3" src="{{ url_for('static', filename='images/Website_homepage.jpg') }}" alt="Shop image">
+        <!--        <img class="rounded-lg-3" src="./static/images/Website_homepage.jpg" alt="Shop with Open sign" width="100%">-->
+        <!--        &lt;!&ndash; Use Width 100% to see the entire picture on the website &ndash;&gt;-->
+    </div>
+</div>
+{% endblock %}

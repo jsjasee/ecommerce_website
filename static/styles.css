@@ -1,0 +1,5 @@
+.btn-primary:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+    transition: all 0.3s ease;
+}
